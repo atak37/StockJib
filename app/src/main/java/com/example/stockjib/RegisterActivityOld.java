@@ -1,15 +1,15 @@
 package com.example.stockjib;
 
-import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
-import android.view.View;
+
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
 import com.google.firebase.auth.FirebaseAuth;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivityOld extends AppCompatActivity {
     private EditText email, password;
     private Button back;
     private Button register;
@@ -18,30 +18,27 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_registerold);
         firebaseAuth = FirebaseAuth.getInstance();
 
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
-        back = findViewById(R.id.back);
+        back = findViewById(R.id.login);
         register = findViewById(R.id.register);
-
-
-
+/*
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(getBaseContext(), "Your answer is correct!" , Toast.LENGTH_SHORT ).show();
-                Intent intent = new Intent(RegisterActivity.this, LoginActivityOld.class);
+                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
+*/
 
-
-
-        //registers email and password into firebase
+        /*
+        //registers email and password into firebae
         //tests if exists or not then makes a toast depending on the answer
-       /* register.setOnClickListener(new View.OnClickListener() {
+        register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String getEmail = email.getText().toString();

@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivityOld extends AppCompatActivity {
     private EditText email, password;
     private Button login;
     private Button register;
@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                Intent intent = new Intent(LoginActivityOld.this, RegisterActivity.class);
                 startActivity(intent);
                /* String getEmail = email.getText().toString();
                 String getPassword = password.getText().toString();
