@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "265547744509",
+    "project_id": "stockjib",
+    "storage_bucket": "stockjib.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265547744509:android:0078dfcef4cf2fab0bea94",
+        "android_client_info": {
+          "package_name": "com.example.stockjib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265547744509-eqnku18mhopgagsu4cgcnl1lu1sm2hcg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH2S-dFc4tZ5PzslnRL9_iCp7eXU93tuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265547744509-eqnku18mhopgagsu4cgcnl1lu1sm2hcg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
